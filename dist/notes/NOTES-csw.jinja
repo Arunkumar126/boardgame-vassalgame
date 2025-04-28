@@ -1,0 +1,41 @@
+{{headline}}
+
+<h3><a href="https://github.com/vassalengine/vassal/releases/tag/{{version}}">Download</a></h3>
+
+<h3><a href="{{release_notes_url}}">Release notes</a></h3>
+
+{% for v in changes -%}
+<h3>Changes since {{ v['since'] }}</h3>
+
+{% if v['new_features'] -%}
+New features
+
+{% for item in v['new_features'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+
+{% if v['bug_fixes'] -%}
+Bug fixes
+
+{% for item in v['bug_fixes'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+
+{% if v['improvements'] -%}
+Improvements
+
+{% for item in v['improvements'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+
+{% if v['other'] -%}
+Other changes
+
+{% for item in v['other'] -%}
+* {{ item.num }}: {{ item.desc }}
+{% endfor %}
+{% endif -%}
+{% endfor -%}

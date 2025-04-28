@@ -1,0 +1,33 @@
+{
+  "headline": "The Vassal Team is happy to announce the release of Vassal {{version}}.",
+  "important": [
+    "If you are using MacOS 14, please ensure you are using 14.4 or later, to avoid a bug in MacOS which prevents Vassal from starting.",
+    "Modules saved in {{version_feature}} are not openable by earlier versions of Vassal. We recommend keeping a backup copy of any pre-{{version_feature}} modules you plan to modify in {{version_feature}} until you've verified that everything works to your satisfaction.",
+    "Things may be broken which worked previously. If you find a new bug, please report it."
+  ],
+  "release_notes_url": "https://forum.vassalengine.org/t/vassal-3-7-release-notes/78948",
+  "downloads": [
+    { "display_name": "Linux", "suffix": "linux.tar.bz2" },
+    { "display_name": "MacOS", "suffix": "macos-universal.dmg" },
+    { "display_name": "Windows (64-bit x86)", "suffix": "windows-x86_64.exe" },
+    { "display_name": "Windows (32-bit x86)", "suffix": "windows-x86_32.exe" },
+    { "display_name": "Windows (64-bit ARM)", "suffix": "windows-aarch64.exe" },
+    { "display_name": "Other", "suffix": "other.zip" }
+  ],
+  "changes": [
+    {
+      "in": "3.8.0-beta1",
+      "since": "3.7.16",
+      "new_features": [
+        { "num": 12944, "desc": "Add pieceCount to the map auto reporter" },
+        { "num": 12763, "desc": "Added ModuleGameFileName property" }
+      ],
+      "bug_fixes": [
+      ],
+      "improvements": [
+      ],
+      "other": [
+      ]
+    }
+  ]
+}
